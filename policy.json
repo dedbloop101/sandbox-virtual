@@ -1,0 +1,10 @@
+{
+  "resources": {
+    "memory_bytes": 536870912,
+    "cpu_quota_us": 1000000
+  },
+  "network": { "allow": true },
+  "allow_domains": ["127.0.0.1", "localhost"],
+  "deny_external": true,
+  "syscalls": { "deny": ["reboot", "init_module","mount", "umount2"] }
+}
